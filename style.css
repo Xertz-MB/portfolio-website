@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto';
+    background-color: #191970;
+}
+
+
+
+
+
+.middle-header .navigation li a{
+    text-decoration: none;
+    color: #ADD8E6;
+}
+
+.header {
+    display: flex;
+    align-items:center;
+    
+    padding-top: 10px;
+}
+
+.website-logo {
+    height: 60px;
+}
+
+.left-header {
+    padding-left: 100px;
+}
+
+.name{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 24px;
+    font-weight:600;
+    color: white;
+    
+}
+
+
+.middle-header ul {
+    list-style-type: none;
+    color: #ADD8E6;
+    font-size: 16px;
+    padding-left: 20;
+}
+
+.middle-header ul li {
+    display: inline-block;
+    margin-right: 20px;
+
+}
+
+
+
+
+.role {
+    padding-left: 100px;
+    padding-top: 150px;
+}
+
+.role span {
+    position: relative;
+    font-size: 20px;
+}
+.role span::before {
+    content: "Gamer";
+    color: #eeeeee;
+    animation: words 20s infinite;
+}
+.role span::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background: #191970;
+    border-left: 2px solid #8FC1E3;
+    right: -8px;
+    animation: cursor .8s infinite , typing 20s steps(14) infinite;
+
+}
+@keyframes cursor {
+    to {
+        border-left: 2px solid #8FC1E3;
+    }
+}
+
+@keyframes words {
+    0%,20%{
+        content: "UI/UX Designer";
+    }
+    21%,40%{
+        content: "Web Developer";
+    }
+    41%,60%{
+        content: "Hacker";
+    }
+    61%,80%{
+        content: "ElBoo Fan";
+    }
+    81%,100%{
+        content: "Kathniel Fan";
+    }
+}
+@keyframes typing {
+    10%,15%,30%,35%,50%,70%,75%,90%,95% {
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85% {
+        width: calc(100% + 8px);
+    }
+}
+
+
+.contents {
+    margin: 0;
+}
+
+.introduction p{
+    padding-left: 100px;
+    color: #eeeeee;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.introduction p span{
+    font-family: 'Pacifico';
+}
+
+.description p {
+    padding-left: 100px;
+    font-size: 18px;
+    color: #cccccc;
+    width: 596px;
+}
+
+.pic-container{
+    position: absolute;
+    top: 0px;
+    right: 50px;
+}
+
+.button-container {
+    padding-left: 100px;
+    padding-top: 20px;
+
+}
+
+.button-container .projects{
+    padding: 20px;
+    background-color:#4682b4;
+    font-weight:500;
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 50px;
+}
