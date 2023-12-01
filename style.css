@@ -131,8 +131,7 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
-.introduction span {
-}
+
 
 
 .description p {
@@ -142,19 +141,17 @@ body {
     width: 550px;
 }
 
-.pic-container{
-    
-}
+
 
 iframe {
     position: absolute;
-    top: 50px;
+    top: 70px;
     right: 0px;
 }
 
 .pic {
     position: absolute;
-    top: 60px;
+    top: 70px;
     right: 100px;
     height: 600px;
 }
@@ -217,7 +214,7 @@ iframe {
 
   .work p {
     padding-left: 100px;
-    padding-top: 100px;
+    padding-top: 50px;
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 24px;
     font-weight: bold;
@@ -241,13 +238,13 @@ iframe {
   }
 
   .proj-container:hover {
-    background-color: #E0E0E0; /* New background color on hover */
-    transform: scale(1.02); /* Slight increase in size on hover */
-    color: red; /* New text color on hover */
+    
+    transform: scale(1.02); 
+    color: red;
   }
   
   .proj-container:active {
-    transform: scale(0.98); /* Slight decrease in size when clicked */
+    transform: scale(0.98); 
   }
 
   .proj-container .thumbnail {
