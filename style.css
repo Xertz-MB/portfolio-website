@@ -1,19 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
     margin: 0;
     font-family: 'Roboto';
-    background-color: #191970;
+    background-color: white;
 }
 
-
-
-
-
-.middle-header .navigation li a{
-    text-decoration: none;
-    color: #ADD8E6;
-}
 
 .header {
     display: flex;
@@ -32,23 +24,35 @@ body {
 
 .name{
     font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 24px;
+    font-size: 28px;
     font-weight:600;
-    color: white;
-    
+    color: black;
+}
+
+.middle-header {
+    display: flex;
+    flex: 1;
+}
+
+.right-header {
+    padding-right: 100px;
+}
+
+.right-header .navigation li a{
+    text-decoration: none;
+    color: black;
 }
 
 
-.middle-header ul {
+.right-header ul {
     list-style-type: none;
-    color: #ADD8E6;
-    font-size: 16px;
-    padding-left: 20;
+    font-size: 18px;
 }
 
-.middle-header ul li {
+
+.right-header ul li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 50px;
 
 }
 
@@ -66,7 +70,7 @@ body {
 }
 .role span::before {
     content: "Gamer";
-    color: #eeeeee;
+    color: #FDB935;
     animation: words 20s infinite;
 }
 .role span::after {
@@ -74,15 +78,15 @@ body {
     position: absolute;
     width: calc(100% + 8px);
     height: 100%;
-    background: #191970;
-    border-left: 2px solid #8FC1E3;
+    background: white;
+    border-left: 2px solid white;
     right: -8px;
     animation: cursor .8s infinite , typing 20s steps(14) infinite;
 
 }
 @keyframes cursor {
     to {
-        border-left: 2px solid #8FC1E3;
+        border-left: 2px solid black;
     }
 }
 
@@ -119,27 +123,34 @@ body {
 
 .introduction p{
     padding-left: 100px;
-    color: #eeeeee;
-    font-size: 40px;
+    color: black;
+    font-size: 50px;
     margin-top: 20px;
     margin-bottom: 20px;
+    Width: 550px;
+    font-family: 'Playfair Display', serif;
 }
 
-.introduction p span{
-    font-family: 'Pacifico';
+.introduction span {
 }
+
 
 .description p {
     padding-left: 100px;
     font-size: 18px;
-    color: #cccccc;
-    width: 596px;
+    color: #444444;
+    width: 550px;
 }
 
 .pic-container{
+    
+}
+
+.pic {
     position: absolute;
-    top: 0px;
-    right: 50px;
+    top: 130px;
+    right: 100px;
+    height: 600px;
 }
 
 .button-container {
@@ -149,11 +160,38 @@ body {
 }
 
 .button-container .projects{
-    padding: 20px;
-    background-color:#4682b4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #FDB935;
     font-weight:500;
     border: none;
-    color: white;
+    color: black;
     font-size: 20px;
-    border-radius: 50px;
+    border-radius: 6px;
+    margin-right: 10px;
 }
+
+.button-container .linkedin {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight:500;
+}
+
+.button-container .linkedin:hover {
+    background-color: #2867B2; 
+    color: white;
+    border-color: #2867B2;
+    box-shadow: 0px 0px 5px #2867B2;
+  }
+.button-container .projects:hover {
+    background-color: #FFC72C; 
+    transform: scale(1.05);
+  }
